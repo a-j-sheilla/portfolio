@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheilla Juma - Software Engineer</title>
+    <meta name="description" content="Sheilla Juma - Experienced Full-Stack Developer specializing in React, Python, Node.js, and cloud technologies.">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sheilla Juma</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Sheilla</span>
+                </h1>
+                <h2 class="hero-subtitle">Full-Stack Developer</h2>
+                <p class="hero-description">
+                    Passionate about creating scalable applications with modern technologies.
+                    Experienced in React, Python, Node.js, and cloud deployment.
+                    Let's build something amazing together!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/a-j-sheilla" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sheilla-juma-9a4862238" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sheillajuma001@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="pic.png" alt="Sheilla Juma - Software Engineer" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Full-Stack Developer</h3>
+                        <p>
+                            I'm a passionate software engineer with a Bachelor's degree in Computer Science 
+                            and strong experience in designing and developing scalable applications. I specialize 
+                            in modern web technologies and cloud deployment.
+                        </p>
+                        <p>
+                            My expertise spans across frontend technologies like React and backend development 
+                            with Node.js, Python, and Go. I'm particularly skilled in API development, database 
+                            management, and cloud technologies including AWS.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>P. O Box 96, Madiany</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Born in 2000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <div class="education-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Science in Computer Science</h4>
+                            <p class="institution">Kisii University</p>
+                            <p class="period">2018-2022</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>Kenya Certificate of Secondary Education</h4>
+                            <p class="period">2014-2017</p>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <div class="cert-item">
+                            <h4>Cyber Threat Management</h4>
+                            <p class="institution">CISCO</p>
+                            <p class="period">November 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    I'm passionate about learning new technologies and constantly improving my skills. 
+                    Here are the technologies I work with:
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Golang</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Automation</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Core Competencies -->
+            <div class="competencies">
+                <h3>Core Competencies</h3>
+                <div class="competency-grid">
+                    <div class="competency-item">
+                        <div class="competency-icon">🚀</div>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="competency-item">
+                        <div class="competency-icon">🤝</div>
+                        <span>Team Collaboration</span>
+                    </div>
+                    <div class="competency-item">
+                        <div class="competency-icon">⚡</div>
+                        <span>Fast Learning</span>
+                    </div>
+                    <div class="competency-item">
+                        <div class="competency-icon">🎯</div>
+                        <span>Attention to Detail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    My professional journey and the experiences that have shaped my career as a developer.
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Apprentice Developer</h3>
+                            <span class="company">Zone01 Kisumu</span>
+                            <span class="period">April 2024 - Ongoing</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Designed and developed full-stack web applications</li>
+                            <li>Built License Management System using Python FastAPI</li>
+                            <li>Implemented RSA/DSA encryption algorithms for secure license generation</li>
+                            <li>Led peer-to-peer collaborations and provided feedback</li>
+                            <li>Developed and optimized RESTful APIs</li>
+                            <li>Participated in hackathons and developer meetups</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>IT Intern</h3>
+                            <span class="company">National Health Insurance Fund (NHIF)</span>
+                            <span class="period">July - September 2022</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Troubleshooting network and configuration of computer equipment</li>
+                            <li>Installing and upgrading operating systems and application software</li>
+                            <li>Hardware repair and maintenance including network equipment</li>
+                            <li>Network problem identification, diagnosis, and resolution</li>
+                            <li>Information backup and server management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="experience-cta">
+                <h3>Ready to Work Together?</h3>
+                <p>I'm always excited to take on new challenges and collaborate on innovative projects.</p>
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    Here are some of the projects I've worked on. Each project represents a unique challenge 
+                    and learning experience.
+                </p>
+            </div>
+            
+            <!-- Project Filter -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="golang">Golang</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="aws">AWS</button>
+                <button class="filter-btn" data-filter="fastapi">FastAPI</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <div class="project-card" data-category="python fastapi">
+                    <div class="project-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>License Management System</h3>
+                        <p>A secure license management system built with Python FastAPI, incorporating RSA/DSA encryption algorithms for license generation and validation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">RSA/DSA Encryption</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/a-j-sheilla/license-management" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="react">
+                    <div class="project-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Full-Stack Web Application</h3>
+                        <p>Modern web application with React frontend and Node.js backend, featuring responsive design and RESTful API integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="aws python">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud-Based API Gateway</h3>
+                        <p>Serverless API gateway deployed on AWS using Lambda functions, S3 storage, and API Gateway for scalable backend services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Serverless</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="golang react">
+                    <div class="project-image">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Recommendation Platform</h3>
+                        <p>An intelligent movie recommendation system built with Golang backend and React frontend, featuring personalized recommendations and user preferences.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/a-j-sheilla/movie-recommendation" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects CTA -->
+            <div class="projects-cta">
+                <h3>Interested in My Work?</h3>
+                <p>These are just a few examples of my projects. I'm always working on new ideas and would love to discuss potential collaborations.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/a-j-sheilla" target="_blank" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    I'm always interested in new opportunities and collaborations. 
+                    Let's discuss how we can work together!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out to me through any of the following channels. I'm always happy to discuss new projects, opportunities, or just have a chat about technology.</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:sheillajuma001@gmail.com">sheillajuma001@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+254708626750">+254 708626750</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>P. O Box 96, Madiany</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <h4>Follow me on:</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/a-j-sheilla" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sheilla-juma-9a4862238" target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3>Send me a message</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                            
+                            <div class="form-message" id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sheilla Juma</h3>
+                    <p>Full-Stack Developer passionate about creating innovative solutions with modern technologies. Always ready for new challenges and collaborations.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/a-j-sheilla" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sheilla-juma-9a4862238" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sheillajuma001@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact">
+                        <p><a href="mailto:sheillajuma001@gmail.com">sheillajuma001@gmail.com</a></p>
+                        <p><a href="tel:+254708626750">+254 708626750</a></p>
+                        <p>P. O Box 96, Madiany</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-small">Let's Work Together</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Sheilla Juma. Made with <i class="fas fa-heart"></i> and lots of coffee ☕</p>
+                    <button class="scroll-top" id="scroll-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
