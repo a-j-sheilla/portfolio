@@ -538,34 +538,51 @@
                 <div class="contact-form-container">
                     <div class="contact-form-card">
                         <h3>Send me a message</h3>
-                        <form class="contact-form" id="contact-form">
+                        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpwzgqpv" method="POST">
                             <div class="form-group">
                                 <label for="name">Your Name *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="subject">Subject *</label>
                                 <input type="text" id="subject" name="subject" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or just say hello!"></textarea>
                             </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-full">
+
+                            <!-- Hidden fields for better email formatting -->
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                            <input type="hidden" name="_next" value="https://a-j-sheilla.github.io/portfolio-website/#contact?success=true">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
                                 <i class="fas fa-paper-plane"></i>
                                 Send Message
                             </button>
-                            
+
                             <div class="form-message" id="form-message"></div>
                         </form>
+
+                        <!-- Alternative contact method -->
+                        <div class="alternative-contact">
+                            <p class="text-center" style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+                                Prefer email?
+                                <a href="mailto:sheillajuma001@gmail.com?subject=Portfolio Contact&body=Hi Sheilla,%0D%0A%0D%0AI found your portfolio and would like to get in touch.%0D%0A%0D%0ABest regards,"
+                                   style="color: var(--accent-primary); text-decoration: none; font-weight: 500;">
+                                    Send directly to sheillajuma001@gmail.com
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

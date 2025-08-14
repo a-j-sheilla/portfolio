@@ -194,11 +194,10 @@ function initProjectFilters() {
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
     const formMessage = document.getElementById('form-message');
+    const submitButton = document.getElementById('submit-btn');
 
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Get form data
+        // Don't prevent default - let Formspree handle the submission
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
@@ -207,30 +206,36 @@ function initContactForm() {
 
         // Basic validation
         if (!name || !email || !subject || !message) {
+            e.preventDefault();
             showFormMessage('Please fill in all required fields.', 'error');
             return;
         }
 
         if (!isValidEmail(email)) {
+            e.preventDefault();
             showFormMessage('Please enter a valid email address.', 'error');
             return;
         }
 
-        // Simulate form submission (replace with actual form handling)
-        const submitButton = contactForm.querySelector('button[type="submit"]');
+        // Show sending state
         const originalText = submitButton.innerHTML;
-        
         submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitButton.disabled = true;
 
-        // Simulate API call delay
+        // Show success message (Formspree will handle the actual sending)
+        showFormMessage('Sending your message...', 'success');
+
+        // Reset button after a delay (Formspree will redirect)
         setTimeout(() => {
-            showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
-        }, 2000);
+        }, 3000);
     });
+
+    // Handle successful form submission (when returning from Formspree)
+    if (window.location.hash === '#contact' && window.location.search.includes('success')) {
+        showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+    }
 
     function showFormMessage(message, type) {
         formMessage.textContent = message;
