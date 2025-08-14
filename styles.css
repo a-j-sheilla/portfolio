@@ -35,6 +35,31 @@
     --shadow-heavy: rgba(0, 0, 0, 0.6);
 }
 
+/* Dark theme skill tags */
+[data-theme="dark"] .skill-tag {
+    background: #334155;
+    color: #cbd5e1;
+    border-color: #475569;
+}
+
+[data-theme="dark"] .skill-tag:hover {
+    background: #475569;
+    color: #f1f5f9;
+    border-color: #64748b;
+}
+
+/* Dark theme tech tags */
+[data-theme="dark"] .tech-tag {
+    background: #064e3b;
+    color: #a7f3d0;
+    border-color: #065f46;
+}
+
+[data-theme="dark"] .tech-tag:hover {
+    background: #065f46;
+    color: #d1fae5;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -561,21 +586,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: white;
+    background: #f1f5f9;
+    color: #475569;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: none;
+    border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
 }
 
 .skill-tag:hover {
-    background: linear-gradient(135deg, #1d4ed8, #1e40af);
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    background: #e2e8f0;
+    color: #334155;
+    transform: translateY(-1px);
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .competencies {
@@ -843,14 +869,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tech-tag {
-    background: linear-gradient(135deg, #10b981, #059669);
-    color: white;
+    background: #ecfdf5;
+    color: #065f46;
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: none;
-    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
+    border: 1px solid #d1fae5;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: #d1fae5;
+    color: #047857;
+    transform: translateY(-1px);
 }
 
 .project-links {
