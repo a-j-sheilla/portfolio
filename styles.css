@@ -561,20 +561,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-tag {
-    background: var(--bg-tertiary);
-    color: var(--accent-primary);
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid var(--border-color);
+    border: none;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
 }
 
 .skill-tag:hover {
-    background: var(--accent-primary);
-    color: white;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .competencies {
@@ -842,13 +843,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tech-tag {
-    background: #f1f5f9;
-    color: #3b82f6;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid #e2e8f0;
+    border: none;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
 }
 
 .project-links {
