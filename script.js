@@ -283,8 +283,31 @@ function initScrollToTop() {
     scrollTopButton.style.visibility = 'hidden';
 }
 
+// Image zoom functionality
+function initImageZoom() {
+    const imageContainers = document.querySelectorAll('.hero-img-container');
+
+    imageContainers.forEach(container => {
+        container.addEventListener('click', function() {
+            // Remove zoom from all containers
+            imageContainers.forEach(c => c.classList.remove('zoomed'));
+
+            // Add zoom to clicked container
+            this.classList.add('zoomed');
+
+            // Remove zoom after 2 seconds
+            setTimeout(() => {
+                this.classList.remove('zoomed');
+            }, 2000);
+        });
+    });
+}
+
 // Additional animations and effects
 function initAnimations() {
+    // Image zoom click effect
+    initImageZoom();
+
     // Typing effect for hero title (optional enhancement)
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
@@ -294,7 +317,7 @@ function initAnimations() {
             button.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-2px) scale(1.02)';
             });
-            
+
             button.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
             });
