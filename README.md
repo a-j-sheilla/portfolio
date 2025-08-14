@@ -1,6 +1,6 @@
 # Sheilla Juma - Portfolio Website
 
-A beautiful, responsive portfolio website showcasing Sheilla Juma's skills and experience as a Full-Stack Developer.
+A beautiful, responsive portfolio website showcasing Sheilla Juma's skills and experience as a Software Engineer.
 
 ## 🌟 Features
 

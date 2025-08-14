@@ -42,10 +42,15 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -57,7 +62,7 @@
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">Sheilla</span>
                 </h1>
-                <h2 class="hero-subtitle">Full-Stack Developer</h2>
+                <h2 class="hero-subtitle">Software Engineer</h2>
                 <p class="hero-description">
                     Passionate about creating scalable applications with modern technologies.
                     Experienced in React, Python, Node.js, and cloud deployment.
@@ -102,7 +107,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-card">
-                        <h3>Full-Stack Developer</h3>
+                        <h3>Software Engineer</h3>
                         <p>
                             I'm a passionate software engineer with a Bachelor's degree in Computer Science 
                             and strong experience in designing and developing scalable applications. I specialize 
@@ -183,9 +188,12 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Golang</span>
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Ruby</span>
+                        <span class="skill-tag">Rust</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Django</span>
                         <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Ruby on Rails</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -325,9 +333,11 @@
             <!-- Project Filter -->
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ruby">Ruby</button>
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="golang">Golang</button>
                 <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="rails">Rails</button>
                 <button class="filter-btn" data-filter="aws">AWS</button>
                 <button class="filter-btn" data-filter="fastapi">FastAPI</button>
             </div>
@@ -405,10 +415,12 @@
                     </div>
                     <div class="project-content">
                         <h3>Movie Recommendation Platform</h3>
-                        <p>An intelligent movie recommendation system built with Golang backend and React frontend, featuring personalized recommendations and user preferences.</p>
+                        <p>A comprehensive movie and TV show discovery platform with real-time search, personalized recommendations, and multi-source data integration. Features include watchlist management, trending content, genre filtering, and intelligent caching system.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Golang</span>
                             <span class="tech-tag">React</span>
+                            <span class="tech-tag">TMDB API</span>
+                            <span class="tech-tag">OMDB API</span>
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">REST API</span>
                         </div>
@@ -419,8 +431,31 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card" data-category="ruby rails">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Shop - E-Commerce Application</h3>
+                        <p>A modern e-commerce web application built with Ruby on Rails, featuring user authentication, product management, shopping cart system, and responsive design with Bulma CSS framework.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ruby</span>
+                            <span class="tech-tag">Ruby on Rails</span>
+                            <span class="tech-tag">SQLite3</span>
+                            <span class="tech-tag">Devise</span>
+                            <span class="tech-tag">Bulma CSS</span>
+                            <span class="tech-tag">CarrierWave</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/a-j-sheilla/shop-ecommerce" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+
             <!-- Projects CTA -->
             <div class="projects-cta">
                 <h3>Interested in My Work?</h3>
@@ -541,7 +576,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Sheilla Juma</h3>
-                    <p>Full-Stack Developer passionate about creating innovative solutions with modern technologies. Always ready for new challenges and collaborations.</p>
+                    <p>Software Engineer passionate about creating innovative solutions with modern technologies. Always ready for new challenges and collaborations.</p>
                     <div class="footer-social">
                         <a href="https://github.com/a-j-sheilla" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>

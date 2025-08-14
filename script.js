@@ -1,6 +1,7 @@
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
+    initThemeToggle();
     initNavigation();
     initScrollEffects();
     initProjectFilters();
@@ -8,6 +9,42 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollToTop();
     initAnimations();
 });
+
+// Theme toggle functionality
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    themeToggle.addEventListener('click', function() {
+        const currentTheme = body.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    function setTheme(theme) {
+        body.setAttribute('data-theme', theme);
+
+        if (theme === 'dark') {
+            themeIcon.className = 'fas fa-sun';
+            themeToggle.setAttribute('aria-label', 'Switch to light mode');
+        } else {
+            themeIcon.className = 'fas fa-moon';
+            themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+        }
+
+        // Add smooth transition for theme change
+        body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+        setTimeout(() => {
+            body.style.transition = '';
+        }, 300);
+    }
+}
 
 // Navigation functionality
 function initNavigation() {
