@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-images-container {
     position: relative;
-    width: 380px;
+    width: 624px;
     height: 360px;
     margin: 0 auto;
 }
@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 320px;
     border: 3px solid rgba(220, 38, 38, 0.6);
     top: 40px;
-    right: 0;
+    left: 304px;
     z-index: 3;
     animation: float 6s ease-in-out infinite reverse;
     background: rgba(220, 38, 38, 0.1);
@@ -1321,7 +1321,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-images-container {
-        width: 300px;
+        width: 487px;
         height: 280px;
     }
 
@@ -1335,7 +1335,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 250px;
         height: 250px;
         top: 30px;
-        right: 0;
+        left: 237px;
     }
 
     .section-title {
@@ -1436,7 +1436,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-images-container {
-        width: 240px;
+        width: 390px;
         height: 220px;
     }
 
@@ -1450,6 +1450,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 200px;
         height: 200px;
         top: 20px;
-        right: 0;
+        left: 190px;
     }
 }
