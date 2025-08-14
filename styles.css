@@ -369,8 +369,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-images-container {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
 }
 
@@ -388,8 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-img-container.main-image {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border: 4px solid rgba(255, 255, 255, 0.3);
     top: 0;
     left: 25px;
@@ -398,14 +398,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-img-container.overlay-image {
-    width: 200px;
-    height: 200px;
-    border: 3px solid rgba(220, 38, 38, 0.4);
-    top: 120px;
-    right: 0;
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgba(220, 38, 38, 0.6);
+    top: 230px;
+    right: 45px;
     z-index: 3;
     animation: float 6s ease-in-out infinite reverse;
     background: rgba(220, 38, 38, 0.1);
+    box-shadow: 0 15px 30px rgba(220, 38, 38, 0.2);
 }
 
 .hero-img-container:hover {
@@ -1320,21 +1321,21 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-images-container {
-        width: 280px;
-        height: 280px;
+        width: 320px;
+        height: 320px;
     }
 
     .hero-img-container.main-image {
-        width: 240px;
-        height: 240px;
+        width: 280px;
+        height: 280px;
         left: 20px;
     }
 
     .hero-img-container.overlay-image {
-        width: 160px;
-        height: 160px;
-        top: 100px;
-        right: 0;
+        width: 120px;
+        height: 120px;
+        top: 180px;
+        right: 30px;
     }
 
     .section-title {
@@ -1435,20 +1436,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-images-container {
-        width: 220px;
-        height: 220px;
+        width: 260px;
+        height: 260px;
     }
 
     .hero-img-container.main-image {
-        width: 180px;
-        height: 180px;
+        width: 220px;
+        height: 220px;
         left: 15px;
     }
 
     .hero-img-container.overlay-image {
-        width: 120px;
-        height: 120px;
-        top: 80px;
-        right: 0;
+        width: 100px;
+        height: 100px;
+        top: 140px;
+        right: 20px;
     }
 }
