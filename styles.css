@@ -367,86 +367,39 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.hero-images-container {
-    position: relative;
-    width: 624px;
-    height: 624px;
-    margin: 0 auto;
-}
-
 .hero-img-container {
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
+    border: 4px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    position: absolute;
-}
-
-.hero-img-container.main-image {
-    width: 320px;
-    height: 320px;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    top: 0;
-    left: 0;
-    z-index: 2;
     animation: float 6s ease-in-out infinite;
-}
-
-.hero-img-container.overlay-image {
-    width: 320px;
-    height: 320px;
-    border: 3px solid rgba(220, 38, 38, 0.6);
-    top: 304px;
-    left: 304px;
-    z-index: 3;
-    animation: float 6s ease-in-out infinite reverse;
-    background: rgba(220, 38, 38, 0.1);
-    box-shadow: 0 15px 30px rgba(220, 38, 38, 0.2);
+    margin: 0 auto;
 }
 
 .hero-img-container:hover {
     transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
-.hero-img-container.main-image:hover {
-    border-color: rgba(255, 255, 255, 0.6);
-    z-index: 4;
-}
-
-.hero-img-container.overlay-image:hover {
-    border-color: rgba(220, 38, 38, 0.7);
-    z-index: 5;
-}
-
-.profile-img, .profile-img-overlay {
+.profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 
-.profile-img:hover, .profile-img-overlay:hover {
+.profile-img:hover {
     transform: scale(1.1);
-}
-
-/* Zoom effect when clicked */
-.hero-img-container.zoomed {
-    transform: scale(1.15);
-    z-index: 10;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-}
-
-.hero-img-container.zoomed .profile-img,
-.hero-img-container.zoomed .profile-img-overlay {
-    transform: scale(1.05);
 }
 
 .scroll-indicator {
@@ -1333,23 +1286,9 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
     }
 
-    .hero-images-container {
-        width: 487px;
-        height: 487px;
-    }
-
-    .hero-img-container.main-image {
-        width: 250px;
-        height: 250px;
-        left: 0;
-        top: 0;
-    }
-
-    .hero-img-container.overlay-image {
-        width: 250px;
-        height: 250px;
-        top: 237px;
-        left: 237px;
+    .hero-img-container {
+        width: 220px;
+        height: 220px;
     }
 
     .section-title {
@@ -1449,22 +1388,8 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 
-    .hero-images-container {
-        width: 390px;
-        height: 390px;
-    }
-
-    .hero-img-container.main-image {
-        width: 200px;
-        height: 200px;
-        left: 0;
-        top: 0;
-    }
-
-    .hero-img-container.overlay-image {
-        width: 200px;
-        height: 200px;
-        top: 190px;
-        left: 190px;
+    .hero-img-container {
+        width: 180px;
+        height: 180px;
     }
 }
